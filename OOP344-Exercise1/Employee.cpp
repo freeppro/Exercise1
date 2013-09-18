@@ -6,7 +6,7 @@
 Employee::Employee(int id, char* name)
    {
    ID = id;
-   Employee::name = new char[strlen(name)];
+   Employee::name = new char[strlen(name)+1]; // 20130918 increased 1 on array size
    strcpy(Employee::name, name);
    boss = 0;
    hours = 0;
@@ -46,4 +46,10 @@ int Employee::getHours()
 int Employee::getID()
    {
    return ID;
+   }
+
+// 20130918 added getId() function
+char* Employee::getName()
+   {
+   return name;
    }

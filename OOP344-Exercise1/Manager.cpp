@@ -1,5 +1,6 @@
 #include "Manager.h"
 #include <iostream>
+#include "Employee.h"   // 20130918 added to fix
 
 Manager::Manager()
    {
